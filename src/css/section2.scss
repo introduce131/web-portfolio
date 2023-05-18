@@ -1,0 +1,13 @@
+@import "../index.scss";
+
+#section2 {
+    position: relative;
+    /* About me */
+    & > #page__title {
+        position: absolute;
+        left: 50%; margin-left: -86.3px;
+        top: 15%;
+        color: white;
+        font: 40px $font-roboto;
+    }
+}

@@ -1,0 +1,117 @@
+/* Roboto, Nato sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+$font-natoSans: 'Noto Sans KR', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+/* Roboto, Nato sans....End*/
+
+/* @mixin 모음 */
+@mixin setBottomBorder() {  /* 선 bottom 빼고 제거 */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* HTML, BODY, SECTION */
+html {
+    overflow: hidden;
+}
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+}
+
+#section1 {
+    background-color: rgba(17, 17, 17, 0.589);
+}
+
+#section2 {
+    background-color: lightpink;
+}
+
+#section3 {
+    background-color: coral;
+}
+
+#section4 {
+    background-color: aqua;
+}
+
+#section4 {
+    background-color: gainsboro;
+}
+
+/* HTML, BODY, SECTION.... END*/
+
+
+/* 헤더 header */
+.header {
+    & > .header__list {
+        position:fixed;
+        z-index: 1;
+        display:flex;
+        width: 100%;
+        margin: 0;
+        padding-left: 40%;
+        list-style: none;
+        font: 16px $font-roboto;
+        color: white;
+        border: 1px solid white;
+        @include setBottomBorder();
+    }
+
+    & > .header__list li {
+        padding: 18px 25px;
+        cursor: pointer;
+    }
+
+    & > .header__list > .header__list li:hover {
+        background-color: rgba(255, 252, 252, 0.5);
+        transition-duration: 200ms;
+    }
+
+    // JS에서 페이지 활성화에 사용할 범용 클래스
+    & > .header__list > .header__list__li__active {
+        background-color: rgba(255, 252, 252, 0.5);
+    }
+}
+/* 헤더 header.... END */
+
+/* 오른쪽 sideBar */
+.sideBar {
+    & >.sideBar__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: fixed;
+        top: 50%;
+        right: 5%;
+        margin-top: -72.5px;
+        transform: translateY(-10%);
+        list-style: none;
+        cursor: pointer;
+        padding-left: 0px;
+        background-color: transparent;
+        color: rgb(173, 173, 173);
+    }
+    & .sideBar__list >.sideBar__list__li__active {
+        color: rgb(60, 151, 57);
+    }
+}
+/* 오른쪽 sideBar.... END */
+
+/* 플러그인 도전 */
+.keyword {
+    & > ul {
+        list-style: none;
+    }
+}

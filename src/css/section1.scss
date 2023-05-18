@@ -1,0 +1,14 @@
+@import "../index.scss";
+
+#section1 {
+    /* 2023 Jongwon's Portfolio */
+    & > #page__title {
+        position: absolute;
+        color: white;
+        writing-mode: vertical-rl;
+        font: 25px $font-roboto;
+        margin-left: 17px;
+        margin-top: 25px;
+    }
+
+}
