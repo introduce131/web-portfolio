@@ -6,8 +6,30 @@
     & > #page__title {
         position: absolute;
         left: 50%; margin-left: -86.3px;
-        top: 15%;
+        top: 12%;
         color: white;
         font: 40px $font-roboto;
+    }
+
+    & > .keywordList__container {
+        position: absolute;
+        top: 40%;
+        height: 68px;
+        overflow: hidden;
+    }
+
+    & > .keywordList__container ul {
+        font: 18px $font-natoSans;
+        width: auto;     
+        height: 68px;  
+        margin: 0px 0px 0px 20px;
+        padding-left: 0px;
+        list-style: none;
+    }
+
+    & > .keywordList__container > ul > li {
+        border: 1px solid black;
+        padding: 20px 30px;
+        margin: 0px;
     }
 }

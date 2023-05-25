@@ -86,6 +86,7 @@ html, body {
   padding-left: 0px;
   background-color: transparent;
   color: rgb(173, 173, 173);
+  z-index: 1;
 }
 .sideBar .sideBar__list > .sideBar__list__li__active {
   color: rgb(60, 151, 57);
@@ -105,7 +106,26 @@ html, body {
   position: absolute;
   left: 50%;
   margin-left: -86.3px;
-  top: 15%;
+  top: 12%;
   color: white;
   font: 40px "Roboto", sans-serif;
+}
+#section2 > .keywordList__container {
+  position: absolute;
+  top: 40%;
+  height: 68px;
+  overflow: hidden;
+}
+#section2 > .keywordList__container ul {
+  font: 18px "Noto Sans KR", sans-serif;
+  width: auto;
+  height: 68px;
+  margin: 0px 0px 0px 20px;
+  padding-left: 0px;
+  list-style: none;
+}
+#section2 > .keywordList__container > ul > li {
+  border: 1px solid black;
+  padding: 20px 30px;
+  margin: 0px;
 }/*# sourceMappingURL=section2.css.map */
