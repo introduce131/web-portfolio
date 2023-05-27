@@ -1,13 +1,39 @@
 @import "../index.scss";
 
 #section2 {
+  position: relative;
+
+  /* About me */
+  & > #page__title {
+    position: absolute;
+    left: 50%;
+    margin-left: -86.3px;
+    top: 12%;
+    color: white;
+    font: 40px $font-roboto;
+  }
+
+  & > .keywordList__container {
+    position: absolute;
+    top: 40%;
+    height: 68px;
+  }
+
+  & > .keywordList__container ul {
     position: relative;
-    /* About me */
-    & > #page__title {
-        position: absolute;
-        left: 50%; margin-left: -86.3px;
-        top: 15%;
-        color: white;
-        font: 40px $font-roboto;
-    }
+    font: 18px $font-natoSans;
+    height: 68px;
+    margin: 0px 0px 0px 20px;
+    padding-left: 0px;
+    list-style: none;
+  }
+
+  & > .keywordList__container > ul li {
+    position: absolute;
+    border: 1px solid black;
+    padding: 20px 30px;
+    margin: 0px;
+    transition: top 0.5s ease;
+    white-space: nowrap; /* 추가된 부분 */
+  }
 }
