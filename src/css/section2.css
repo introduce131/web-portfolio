@@ -114,15 +114,24 @@ html, body {
   position: absolute;
   top: 40%;
   height: 68px;
+<<<<<<< HEAD
 }
 #section2 > .keywordList__container ul {
   position: relative;
   font: 18px "Noto Sans KR", sans-serif;
+=======
+  overflow: hidden;
+}
+#section2 > .keywordList__container ul {
+  font: 18px "Noto Sans KR", sans-serif;
+  width: auto;
+>>>>>>> 60d1d89988366f2d2c3f776cda8d9fb6909b6d3a
   height: 68px;
   margin: 0px 0px 0px 20px;
   padding-left: 0px;
   list-style: none;
 }
+<<<<<<< HEAD
 #section2 > .keywordList__container > ul li {
   position: absolute;
   border: 1px solid black;
@@ -130,4 +139,10 @@ html, body {
   margin: 0px;
   transition: top 0.5s ease;
   white-space: nowrap; /* 추가된 부분 */
+=======
+#section2 > .keywordList__container > ul > li {
+  border: 1px solid black;
+  padding: 20px 30px;
+  margin: 0px;
+>>>>>>> 60d1d89988366f2d2c3f776cda8d9fb6909b6d3a
 }/*# sourceMappingURL=section2.css.map */
