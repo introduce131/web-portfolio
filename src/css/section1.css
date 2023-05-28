@@ -8,7 +8,8 @@ html {
   overflow: hidden;
 }
 
-html, body {
+html,
+body {
   display: block;
   width: 100%;
   height: 100%;
@@ -21,7 +22,7 @@ html, body {
 }
 
 #section1 {
-  background-color: rgba(17, 17, 17, 0.589);
+  background-color: #dbe6fa;
 }
 
 #section2 {
@@ -99,13 +100,16 @@ html, body {
 }
 
 #section1 {
-  /* 2023 Jongwon's Portfolio */
+  /* T H E */
+  /* jongwon */
+  /* PORTFOLIO */
 }
-#section1 > #page__title {
+#section1 > #page__title__one {
   position: absolute;
-  color: white;
-  writing-mode: vertical-rl;
-  font: 25px "Roboto", sans-serif;
-  margin-left: 17px;
-  margin-top: 25px;
+}
+#section1 > #page__title__one {
+  position: absolute;
+}
+#section1 > #page__title__one {
+  position: absolute;
 }/*# sourceMappingURL=section1.css.map */

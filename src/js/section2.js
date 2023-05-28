@@ -1,35 +1,30 @@
-/*
-    translateZ : 0 → -20 → -60 → -80 →-60 → -20
-    translateY : 알아서 고치세요
-    opacity : 0 → 0.25 → 0.75 → 1 → 0.75 → 0.25
-    perspctive : 100px 고정
-*/
-
-var listArray = document.querySelectorAll(".keywordList__container ul")[0].children;
-
-console.log(listArray);
+var listArray = document.querySelector("#section2 .keywordList__container ul").children;
 
 for (let i = 0; i < listArray.length; i++) {
-  console.log(listArray[i].getBoundingClientRect());
-  listArray[i].setAttribute("style", `top:${(i + 1) * 68}px`);
+  listArray[i].style.top = `${(i + 1) * 68}px`;
 }
 
-i = 0; // 돌려쓰기 위해서 0으로 초기화함
+var i = 0;
 
 setInterval(() => {
   if (i >= listArray.length) i = 0;
 
+  // 1) 맨 위로 올려서 i번째 자기소개 요소가 보여짐
   const sltdItem = listArray[i];
-  sltdItem.setAttribute("style", `top:${0}px;`);
+  sltdItem.style.top = "0";
 
-  // 트랜지션 시간(0.5초) 후, 다시 초기화
-  setTimeout(() => {}, 500);
+  // 2) 트랜지션 시간(0.5초) 후, i번째를 제외한 나머지에 대한 처리임
+  setTimeout(() => {
+    for (let j = 0; j < listArray.length; j++) {
+      // 2.1) i번째 제외 후, 나머지 들러리는 2번째 줄(68px)에 전부 몰아넣을거임
+      if (i !== j) {
+        listArray[j].style.top = `${68}px`;
+      }
+    }
+  }, 500);
 
-  i++;
-
-  // for (i = 0; i < listArray.length; i++) {
-  //   let myOwnValue = listArray[i].getBoundingClientRect().top;
-  //   listArray[i].setAttribute("style", `top: ${myOwnValue + 68}px`);
-  //   console.log(`${i + 1}번째 li의 top값에 ` + (myOwnValue + 68) + "px 넣었음");
-  // }
+  // 3) 0.501초 후.. 1증가.. 이딴게..최선..?
+  setTimeout(() => {
+    i++;
+  }, 501);
 }, 2000);
