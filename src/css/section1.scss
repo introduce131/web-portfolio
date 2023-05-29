@@ -1,18 +1,34 @@
 @import "../index.scss";
 
 #section1 {
-  /* T H E */
-  & > #page__title__one {
+  background-color: #e1dedc; /* 배경 색상 설정 */
+  background-image: linear-gradient(135deg, #b2dfdb 10%, #e6e6fa 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  & > .page__title {
     position: absolute;
+    padding: 20px;
+    font: 40px $font-natoSans;
+    color: rgb(37, 37, 37);
+    letter-spacing: 5px;
   }
 
-  /* jongwon */
-  & > #page__title__one {
-    position: absolute;
+  & > .page__title:first-child {
+    top: 30%;
+    left: 10%;
   }
 
-  /* PORTFOLIO */
-  & > #page__title__one {
-    position: absolute;
+  & > .page__title:nth-child(2) {
+    top: 36%;
+    left: 10%;
+  }
+
+  & > .page__title:nth-child(3) {
+    top: 45%;
+    left: 10%;
+    font-size: 20px;
+    letter-spacing: normal;
   }
 }
