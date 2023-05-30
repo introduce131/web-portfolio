@@ -2,7 +2,12 @@
 
 #section1 {
   background-color: #e1dedc; /* 배경 색상 설정 */
-  background-image: linear-gradient(135deg, #b2dfdb 10%, #e6e6fa 70%);
+  // /* 피치 -> 연노랑 */
+  // background-image: linear-gradient(135deg, #fcd0ad 10%, #f9f7b0 100%);
+  // /* 연파랑 -> 라벤더 */
+  background-image: linear-gradient(135deg, #c2dfee 10%, #d7b9e4 100%);
+  /* 민트 그린 -> 베이비 블루 */
+  //background-image: linear-gradient(135deg, #b2ecd9 10%, #9edcff 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
