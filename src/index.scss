@@ -34,23 +34,27 @@ body {
 }
 
 #section1 {
-  background-color: #dbe6fa;
+  // /* 연파랑 -> 라벤더 */
+  background-image: linear-gradient(135deg, #c2dfee 10%, #d7b9e4 100%);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #section2 {
-  background-color: lightpink;
+  background-color: #FAFAFF;
 }
 
 #section3 {
-  background-color: coral;
+  /* 민트 그린 -> 베이비 블루 */
+  background-color: #FAFAFF;
 }
 
 #section4 {
-  background-color: aqua;
+  background-color: #FAFAFF;
 }
 
 #section4 {
-  background-color: gainsboro;
+  background-color: #FAFAFF;
 }
 
 /* HTML, BODY, SECTION.... END*/
@@ -66,7 +70,7 @@ body {
     padding-left: 40%;
     list-style: none;
     font: 16px $font-roboto;
-    color: white;
+    color: rgb(155, 155, 155);
     border: 1px solid white;
     @include setBottomBorder();
   }
@@ -112,9 +116,28 @@ body {
 }
 /* 오른쪽 sideBar.... END */
 
-/* 플러그인 도전 */
-.keyword {
-  & > ul {
-    list-style: none;
-  }
+/* [페이지 제목] [서브 제목] */
+.page__title {
+  padding-top: 100px;
+  padding-left: 30px;
+  display: flex;
+  gap: 15px;
+
+    span:first-child {  /* About */
+      font: 38px $font-roboto;
+      color: rgb(71, 106, 221);
+    }
+
+    span:nth-child(2) {   /* Me */
+      font: 38px $font-roboto;
+    }
+
+    #page__title__sub {   /* 서브타이틀 */
+      display: inline-flex;
+      align-items: center;
+      margin-left: 10px;
+      padding-top: 10px;
+      font: 17px $font-natoSans;
+      color: rgb(73, 73, 73);
+    }
 }

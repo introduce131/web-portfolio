@@ -23,23 +23,26 @@ body {
 }
 
 #section1 {
-  background-color: #dbe6fa;
+  background-image: linear-gradient(135deg, #c2dfee 10%, #d7b9e4 100%);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #section2 {
-  background-color: lightpink;
+  background-color: #FAFAFF;
 }
 
 #section3 {
-  background-color: coral;
+  /* 민트 그린 -> 베이비 블루 */
+  background-color: #FAFAFF;
 }
 
 #section4 {
-  background-color: aqua;
+  background-color: #FAFAFF;
 }
 
 #section4 {
-  background-color: gainsboro;
+  background-color: #FAFAFF;
 }
 
 /* HTML, BODY, SECTION.... END*/
@@ -53,7 +56,7 @@ body {
   padding-left: 40%;
   list-style: none;
   font: 16px "Roboto", sans-serif;
-  color: white;
+  color: rgb(155, 155, 155);
   border: 1px solid white;
   /* 선 bottom 빼고 제거 */
   border-top: none;
@@ -95,23 +98,54 @@ body {
 }
 
 /* 오른쪽 sideBar.... END */
-/* 플러그인 도전 */
-.keyword > ul {
-  list-style: none;
+/* [페이지 제목] [서브 제목] */
+.page__title {
+  padding-top: 100px;
+  padding-left: 30px;
+  display: flex;
+  gap: 15px;
+}
+.page__title span:first-child { /* About */
+  font: 38px "Roboto", sans-serif;
+  color: rgb(71, 106, 221);
+}
+.page__title span:nth-child(2) { /* Me */
+  font: 38px "Roboto", sans-serif;
+}
+.page__title #page__title__sub { /* 서브타이틀 */
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-top: 10px;
+  font: 17px "Noto Sans KR", sans-serif;
+  color: rgb(73, 73, 73);
 }
 
 #section2 {
   position: relative;
-  /* About me */
+  /* 페이지 콘텐츠 2개 영역 */
   /* 이거 ul-li를 감싸고 있는 부모 div임 */
 }
-#section2 > #page__title {
-  position: absolute;
-  left: 50%;
-  margin-left: -86.3px;
-  top: 12%;
-  color: white;
-  font: 40px "Roboto", sans-serif;
+#section2 > .page__content {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  height: 70%;
+  border: 1px solid black;
+}
+#section2 > .page__content > #content__left, #section2 > .page__content #content__right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid black;
+}
+#section2 > .page__content > #content__left > .top, #section2 > .page__content #content__right > .top {
+  border: 1px solid black;
+  height: 50%;
+}
+#section2 > .page__content > #content__left > .bottom, #section2 > .page__content #content__right > .bottom {
+  border: 1px solid black;
+  height: 50%;
 }
 #section2 > .keywordList__container {
   position: absolute;
