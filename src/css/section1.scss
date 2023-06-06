@@ -1,28 +1,28 @@
 @import "../index.scss";
 
 #section1 {
-  & > .page__title {
-    position: absolute;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+
+  > .image__container {
+    position: relative;
+
+    > #arm {
+      position: absolute;
+      top: 41.5%;
+      left: 37.5%;
+    }
+  }
+  > .page__title {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     font: 40px $font-natoSans;
     color: rgb(37, 37, 37);
     letter-spacing: 5px;
-  }
 
-  & > .page__title:first-child {
-    top: 30%;
-    left: 10%;
-  }
-
-  & > .page__title:nth-child(2) {
-    top: 36%;
-    left: 10%;
-  }
-
-  & > .page__title:nth-child(3) {
-    top: 45%;
-    left: 10%;
-    font-size: 20px;
-    letter-spacing: normal;
+    > p {
+      margin: 0;
+    }
   }
 }

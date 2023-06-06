@@ -34,27 +34,24 @@ body {
 }
 
 #section1 {
-  // /* 연파랑 -> 라벤더 */
-  background-image: linear-gradient(135deg, #c2dfee 10%, #d7b9e4 100%);
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #f2f9ff;
 }
 
 #section2 {
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 #section3 {
   /* 민트 그린 -> 베이비 블루 */
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 #section4 {
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 #section4 {
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 /* HTML, BODY, SECTION.... END*/
@@ -111,7 +108,7 @@ body {
     z-index: 1;
   }
   & .sideBar__list > .sideBar__list__li__active {
-    color: rgb(60, 151, 57);
+    color: rgb(121, 147, 235);
   }
 }
 /* 오른쪽 sideBar.... END */
@@ -123,21 +120,24 @@ body {
   display: flex;
   gap: 15px;
 
-    span:first-child {  /* About */
-      font: 38px $font-roboto;
-      color: rgb(71, 106, 221);
-    }
+  span:first-child {
+    /* About */
+    font: 38px $font-roboto;
+    color: rgb(71, 106, 221);
+  }
 
-    span:nth-child(2) {   /* Me */
-      font: 38px $font-roboto;
-    }
+  span:nth-child(2) {
+    /* Me */
+    font: 38px $font-roboto;
+  }
 
-    #page__title__sub {   /* 서브타이틀 */
-      display: inline-flex;
-      align-items: center;
-      margin-left: 10px;
-      padding-top: 10px;
-      font: 17px $font-natoSans;
-      color: rgb(73, 73, 73);
-    }
+  #page__title__sub {
+    /* 서브타이틀 */
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 10px;
+    font: 17px $font-natoSans;
+    color: rgb(73, 73, 73);
+  }
 }

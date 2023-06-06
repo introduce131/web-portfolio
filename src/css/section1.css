@@ -23,26 +23,24 @@ body {
 }
 
 #section1 {
-  background-image: linear-gradient(135deg, #c2dfee 10%, #d7b9e4 100%);
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #f2f9ff;
 }
 
 #section2 {
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 #section3 {
   /* 민트 그린 -> 베이비 블루 */
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 #section4 {
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 #section4 {
-  background-color: #FAFAFF;
+  background-color: white;
 }
 
 /* HTML, BODY, SECTION.... END*/
@@ -94,7 +92,7 @@ body {
   z-index: 1;
 }
 .sideBar .sideBar__list > .sideBar__list__li__active {
-  color: rgb(60, 151, 57);
+  color: rgb(121, 147, 235);
 }
 
 /* 오른쪽 sideBar.... END */
@@ -105,14 +103,17 @@ body {
   display: flex;
   gap: 15px;
 }
-.page__title span:first-child { /* About */
+.page__title span:first-child {
+  /* About */
   font: 38px "Roboto", sans-serif;
   color: rgb(71, 106, 221);
 }
-.page__title span:nth-child(2) { /* Me */
+.page__title span:nth-child(2) {
+  /* Me */
   font: 38px "Roboto", sans-serif;
 }
-.page__title #page__title__sub { /* 서브타이틀 */
+.page__title #page__title__sub {
+  /* 서브타이틀 */
   display: inline-flex;
   align-items: center;
   margin-left: 10px;
@@ -121,24 +122,26 @@ body {
   color: rgb(73, 73, 73);
 }
 
-#section1 > .page__title {
+#section1 {
+  display: flex;
+  align-items: center;
+}
+#section1 > .image__container {
+  position: relative;
+}
+#section1 > .image__container > #arm {
   position: absolute;
-  padding: 20px;
+  top: 41.5%;
+  left: 37.5%;
+}
+#section1 > .page__title {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   font: 40px "Noto Sans KR", sans-serif;
   color: rgb(37, 37, 37);
   letter-spacing: 5px;
 }
-#section1 > .page__title:first-child {
-  top: 30%;
-  left: 10%;
-}
-#section1 > .page__title:nth-child(2) {
-  top: 36%;
-  left: 10%;
-}
-#section1 > .page__title:nth-child(3) {
-  top: 45%;
-  left: 10%;
-  font-size: 20px;
-  letter-spacing: normal;
+#section1 > .page__title > p {
+  margin: 0;
 }/*# sourceMappingURL=section1.css.map */
