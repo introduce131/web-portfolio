@@ -1,30 +1,30 @@
-// var listArray = document.querySelector("#section2 .keywordList__container ul").children;
+// 컨테이너랑 li요소 가져오기 이때 listItems는 Collection 형태임
+const keywordListContainer = document.querySelector(".keywordList__container");
+const keywordListItems = keywordListContainer.querySelectorAll("li");
 
-// for (let i = 0; i < listArray.length; i++) {
-//   listArray[i].style.top = `${(i + 1) * 68}px`;
-// }
+// http://dew-dew.com/ 해당 사이트 참조하여 한땀한땀 가져온 눈물의 배열..
+let translateZArray = [0, -20, -60, -80, -60, -20]; // translateZ 값
+let opacityValues = [1, 0.75, 0.25, 0, 0.25, 0.75]; // opacity(투명도) 값
+let translateYArray = [0, 173.205, 173.205, 2.44929e-14, -173.205, -173.205]; // 이게 맞냐?
+let currentIndex = 0;
 
-// var i = 0;
+// 값 업데이트 함수 updateTransform
+function updateTransform() {
+  // 현재 적용되는 값의 인덱스를 업데이트, currentIndex값은 한정됨 (0, 1, 2, 3, 4, 5)
+  // (0 + 1) % 6 == 1 ... (5 + 1) % 6 == 0 으로 인덱스 값이 배열의 범위를 넘어가지 않게
+  // %는 나머지를 가져오는 연산자, currentIndex는 배열 범위를 넘지 못함
+  currentIndex = (currentIndex + 1) % keywordListItems.length;
 
-// setInterval(() => {
-//   if (i >= listArray.length) i = 0;
+  // index : 현재 요소의 인덱스 값
+  // currentIndex : 현재 적용되는 값의 인덱스 값
+  keywordListItems.forEach((item, index) => {
+    const translateZ = translateZArray[(index + currentIndex) % translateZArray.length];
+    const translateY = translateYArray[(index + currentIndex) % translateYArray.length];
 
-//   // 1) 맨 위로 올려서 i번째 자기소개 요소가 보여짐
-//   const sltdItem = listArray[i];
-//   sltdItem.style.top = "0";
+    item.style.transform = `perspective(100px) translateZ(${translateZ}px) translateY(${translateY}%)`;
+    item.style.opacity = opacityValues[(index + currentIndex) % opacityValues.length];
+  });
+}
 
-//   // 2) 트랜지션 시간(0.5초) 후, i번째를 제외한 나머지에 대한 처리임
-//   setTimeout(() => {
-//     for (let j = 0; j < listArray.length; j++) {
-//       // 2.1) i번째 제외 후, 나머지 들러리는 2번째 줄(68px)에 전부 몰아넣을거임
-//       if (i !== j) {
-//         listArray[j].style.top = `${68}px`;
-//       }
-//     }
-//   }, 500);
-
-//   // 3) 0.501초 후.. 1증가.. 이딴게..최선..?
-//   setTimeout(() => {
-//     i++;
-//   }, 501);
-// }, 2000);
+// 업데이트의 주기는 1초(1000ms)임.
+setInterval(updateTransform, 1000);
