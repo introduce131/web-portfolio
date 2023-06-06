@@ -133,17 +133,20 @@ body {
   height: 70%;
   border: 1px solid black;
 }
-#section2 > .page__content > #content__left, #section2 > .page__content #content__right {
+#section2 > .page__content > #content__left,
+#section2 > .page__content #content__right {
   display: flex;
   flex-direction: column;
   width: 50%;
   border: 1px solid black;
 }
-#section2 > .page__content > #content__left > .top, #section2 > .page__content #content__right > .top {
+#section2 > .page__content > #content__left > .top,
+#section2 > .page__content #content__right > .top {
   border: 1px solid black;
   height: 50%;
 }
-#section2 > .page__content > #content__left > .bottom, #section2 > .page__content #content__right > .bottom {
+#section2 > .page__content > #content__left > .bottom,
+#section2 > .page__content #content__right > .bottom {
   border: 1px solid black;
   height: 50%;
 }
@@ -151,24 +154,11 @@ body {
   position: absolute;
   top: 40%;
   width: 100%;
-  height: 68px;
 }
-#section2 > .keywordList__container ul {
-  position: relative;
-  font: 18px "Noto Sans KR", sans-serif;
-  height: 68px;
-  width: auto;
-  margin: 0px 0px 0px 20px;
-  padding-left: 0px;
+#section2 > .keywordList__container > ul li {
   list-style: none;
-  overflow: hidden;
-}
-#section2 > .keywordList__container > ul > li {
   position: absolute;
-  border: 1px solid black;
-  background-color: rgb(214, 230, 245);
-  padding: 20px 30px;
-  margin: 0px;
-  transition: top 0.5s ease;
-  width: 300px;
+  height: 20px;
+  padding: 0px 30px;
+  transition: all 0.8s;
 }/*# sourceMappingURL=section2.css.map */

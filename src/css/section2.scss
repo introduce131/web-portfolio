@@ -6,12 +6,13 @@
   /* 페이지 콘텐츠 2개 영역 */
   > .page__content {
     margin: 0 auto;
-    display:flex;
+    display: flex;
     width: 80%;
     height: 70%;
     border: 1px solid black;
-    
-    > #content__left, #content__right {
+
+    > #content__left,
+    #content__right {
       display: flex;
       flex-direction: column;
       width: 50%;
@@ -34,27 +35,13 @@
     position: absolute;
     top: 40%;
     width: 100%;
-    height: 68px;
-  }
 
-  > .keywordList__container ul {
-    position: relative;
-    font: 18px $font-natoSans;
-    height: 68px;
-    width: auto;
-    margin: 0px 0px 0px 20px;
-    padding-left: 0px;
-    list-style: none;
-    overflow: hidden;
-  }
-
-  > .keywordList__container > ul > li {
-    position: absolute;
-    border: 1px solid black;
-    background-color: rgb(214, 230, 245);
-    padding: 20px 30px;
-    margin: 0px;
-    transition: top 0.5s ease;
-    width: 300px;
+    > ul li {
+      list-style: none;
+      position: absolute;
+      height: 20px;
+      padding: 0px 30px;
+      transition: all 0.8s;
+    }
   }
 }
