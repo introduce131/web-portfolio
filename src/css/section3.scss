@@ -1,0 +1,50 @@
+@import "../index.scss";
+
+#section3 {
+  > .stack__container {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+
+    > img:last-child {
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+      z-index: 2;
+    }
+
+    > .stack__icon {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #fff;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img:nth-child(1) {
+      top: 10%;
+      left: 35%;
+    }
+
+    img:nth-child(2) {
+      top: 25%;
+      right: 10%;
+    }
+
+    img:nth-child(3) {
+      top: 50%;
+      right: 20%;
+    }
+
+    // 추가적인 아이콘들의 위치를 설정할 수 있습니다.
+    // img:nth-child(4) { ... }
+    // img:nth-child(5) { ... }
+    // ...
+
+    img:not(:last-child):hover {
+      transform: scale(1.1);
+    }
+  }
+}

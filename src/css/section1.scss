@@ -7,10 +7,45 @@
   > .image__container {
     position: relative;
 
+    > #grass {
+      position: absolute;
+      top: 59.6%;
+      left: 3.5%;
+      animation: grassWind 3s ease-in-out 0s infinite;
+      transform-origin: center bottom; // 기준점은 중앙, 아래, 화초 뿌리고정 할거임
+    }
+
     > #arm {
       position: absolute;
       top: 41.5%;
-      left: 37.5%;
+      left: 37.7%;
+      animation: armShake 2s ease-in-out 0s infinite;
+    }
+
+    /* 화초에 바람 애니메이션, 회전변형 5도(오른쪽)*/
+    @keyframes grassWind {
+      0% {
+        transform: rotateZ(0deg);
+      }
+      50% {
+        transform: rotateZ(5deg);
+      }
+      100% {
+        transform: rotateZ(0deg);
+      }
+    }
+
+    /* 개발자 팔 위, 아래로 애니메이션*/
+    @keyframes armShake {
+      0% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(-3%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
     }
   }
   > .page__title {

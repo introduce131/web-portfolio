@@ -54,7 +54,7 @@ body {
   padding-left: 40%;
   list-style: none;
   font: 16px "Roboto", sans-serif;
-  color: rgb(155, 155, 155);
+  color: rgb(121, 147, 235);
   border: 1px solid white;
   /* 선 bottom 빼고 제거 */
   border-top: none;
@@ -81,17 +81,19 @@ body {
   gap: 10px;
   position: fixed;
   top: 50%;
-  right: 5%;
+  right: 1%;
   margin-top: -72.5px;
   transform: translateY(-10%);
   list-style: none;
-  cursor: pointer;
   padding-left: 0px;
   background-color: transparent;
   color: rgb(173, 173, 173);
   z-index: 1;
 }
-.sideBar .sideBar__list > .sideBar__list__li__active {
+.sideBar > .sideBar__list > li {
+  cursor: pointer;
+}
+.sideBar > .sideBar__list > .sideBar__list__li__active {
   color: rgb(121, 147, 235);
 }
 

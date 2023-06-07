@@ -67,7 +67,7 @@ body {
     padding-left: 40%;
     list-style: none;
     font: 16px $font-roboto;
-    color: rgb(155, 155, 155);
+    color: rgb(121, 147, 235);
     border: 1px solid white;
     @include setBottomBorder();
   }
@@ -91,24 +91,28 @@ body {
 
 /* 오른쪽 sideBar */
 .sideBar {
-  & > .sideBar__list {
+  > .sideBar__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     position: fixed;
     top: 50%;
-    right: 5%;
+    right: 1%;
     margin-top: -72.5px;
     transform: translateY(-10%);
     list-style: none;
-    cursor: pointer;
     padding-left: 0px;
     background-color: transparent;
     color: rgb(173, 173, 173);
     z-index: 1;
-  }
-  & .sideBar__list > .sideBar__list__li__active {
-    color: rgb(121, 147, 235);
+
+    > li {
+      cursor: pointer;
+    }
+
+    > .sideBar__list__li__active {
+      color: rgb(121, 147, 235);
+    }
   }
 }
 /* 오른쪽 sideBar.... END */
