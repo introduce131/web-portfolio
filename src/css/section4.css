@@ -123,59 +123,56 @@ body {
     display: none;
   }
 }
-#section1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#section1 > .image__container {
-  position: relative;
-  /* 화초에 바람 애니메이션, 회전변형 5도(오른쪽)*/
-  /* 개발자 팔 위, 아래로 애니메이션*/
-}
-#section1 > .image__container > #grass {
-  position: absolute;
-  top: 59.6%;
-  left: 3.5%;
-  animation: grassWind 3s ease-in-out 0s infinite;
-  transform-origin: center bottom;
-}
-#section1 > .image__container > #arm {
-  position: absolute;
-  top: 41.5%;
-  left: 37.7%;
-  animation: armShake 2s ease-in-out 0s infinite;
-}
-@keyframes grassWind {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  50% {
-    transform: rotateZ(5deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-@keyframes armShake {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-#section1 > .page__title {
+#section4 .portfolio__container {
+  font: 15px "Noto Sans KR", sans-serif;
   display: flex;
   flex-direction: column;
-  width: 40%;
-  font: 40px "Noto Sans KR", sans-serif;
-  color: rgb(37, 37, 37);
-  letter-spacing: 5px;
+  gap: 50px;
+  justify-content: center;
+  margin: 35px auto 0px auto;
+  width: 90%;
+  height: 70%;
+  background-color: #f2f9ff;
+  border-radius: 20px;
 }
-#section1 > .page__title > p {
+#section4 .portfolio__container > .content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#section4 .portfolio__container > .content > .project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(172, 172, 172);
+  width: 42%;
+  height: 85%;
+  max-height: 260px;
+  max-width: 380px;
+}
+#section4 .portfolio__container > .content > .project > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#section4 .portfolio__container > .content > .project > a > img {
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  max-width: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section4 .portfolio__container > .content > .project > div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+#section4 .portfolio__container > .content > .project > div:last-child > .project__name > p:first-child,
+#section4 .portfolio__container > .content > .project > div:last-child .project__contents > p:first-child {
   margin: 0;
-}/*# sourceMappingURL=section1.css.map */
+}
+#section4 .portfolio__container > .content > .project > div:last-child > .project__name > p:last-child,
+#section4 .portfolio__container > .content > .project > div:last-child .project__contents > p:last-child {
+  margin: 0;
+  font-size: 12px;
+  color: rgb(121, 147, 235);
+}/*# sourceMappingURL=section4.css.map */

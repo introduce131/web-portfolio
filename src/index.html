@@ -2,12 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>BJW's Portfolio</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="css/section1.css" />
     <link rel="stylesheet" type="text/css" href="css/section2.css" />
     <link rel="stylesheet" type="text/css" href="css/section3.css" />
+    <link rel="stylesheet" type="text/css" href="css/section4.css" />
+    <link rel="stylesheet" type="text/css" href="css/section5.css" />
   </head>
   <body>
     <!--헤더 부분에 해당함-->
@@ -79,8 +82,8 @@
           <h3>Profile</h3>
           <div class="profile__introduce">
             <ul>
-              <li>내가 원하는 결과를 코드로 실현되는 과정에서 매력을 느껴</li>
-              <li>백엔드 & 앱 개발자 분야에 뛰어들게 되었습니다.</li>
+              <li>야간 자율학습 시간, 친구가 보고 있던 C언어 책을 우연히 보게 되었고,</li>
+              <li>"Hello, World!" 를 직접 출력해보며 개발에 흥미를 갖게 되었습니다.</li>
               <li>섬세한 코드 작성과 효율적인 아키텍처 설계를 목표로 삼고 있습니다.</li>
               <br />
               <li>협업과 커뮤니케이션 능력을 중요시 여기며, 목표 달성에 기여하겠습니다.</li>
@@ -97,6 +100,7 @@
                 <li>2017.03 ~ 2019.02</li>
                 <li>2017.09 ~ 2020.06</li>
                 <li>&nbsp;</li>
+                <li>2021.03 ~ 2022.09</li>
                 <li>2023.03 ~ 2026.02</li>
               </ul>
             </div>
@@ -106,7 +110,8 @@
               <ul>
                 <li>[일학습병행제] SW개발_L3과정 이수</li>
                 <li>(주)메트로소프트 근무</li>
-                <li>HIS, KIOSK 개발 및 유지보수</li>
+                <li>HIS, KIOSK 개발 및 유지보수, 클라이언트 응대 업무</li>
+                <li>육군 7기동군단 제1강습대대</li>
                 <li>동양미래대 재학중</li>
               </ul>
             </div>
@@ -125,23 +130,43 @@
       </div>
       <!--내용 컨테이너-->
       <div class="stack__container">
-        <img class="stack__icon" src="./resource/icons/c.png" />
-        <img class="stack__icon" src="./resource/icons/cpp.png" />
-        <img class="stack__icon" src="./resource/icons/csharp.png" />
-        <img class="stack__icon" src="./resource/icons/java.png" />
-        <img class="stack__icon" src="./resource/icons/js.png" />
-        <img class="stack__icon" src="./resource/icons/ts.png" />
-        <img class="stack__icon" src="./resource/icons/react.png" />
-        <img class="stack__icon" src="./resource/icons/html.png" />
-        <img class="stack__icon" src="./resource/icons/css.png" />
-        <img class="stack__icon" src="./resource/icons/sass.png" />
-        <img class="stack__icon" src="./resource/icons/slack.png" />
-        <img class="stack__icon" src="./resource/icons/git.png" />
-        <img class="stack__icon" src="./resource/icons/firebase.png" />
-        <img class="stack__icon" src="./resource/icons/mysql.png" />
-        <img class="stack__icon" src="./resource/icons/mssql.png" />
-
-        <img width="200px" height="250px" src="./resource/img/thinking.png" />
+        <div class="stack__front">
+          <div id="title">Frontend</div>
+          <div id="icons">
+            <img src="resource/icons/html_css.png" />
+            <img src="resource/icons/js_ts.png" />
+            <img src="resource/icons/React.png" />
+            <img src="resource/icons/sass_jquery.png" />
+            <img src="resource/icons/zotai.png" />
+            <img src="resource/icons/styledcomponent_tailwind.png" />
+          </div>
+        </div>
+        <div class="stack__back">
+          <div id="title">Backend</div>
+          <div id="icons">
+            <img src="resource/icons/java.png" />
+            <img src="resource/icons/csharp_cplus.png" />
+            <img src="resource/icons/nodejs.png" />
+            <img src="resource/icons/firebase.png" />
+          </div>
+        </div>
+        <div class="stack__db">
+          <div id="title">Database</div>
+          <div id="icons">
+            <img src="resource/icons/mysql.png" />
+            <img src="resource/icons/sqlserver.png" />
+            <img src="resource/icons/firebase.png" />
+            <img src="resource/icons/oracle.png" />
+          </div>
+        </div>
+        <div class="stack__tools">
+          <div id="title">Tools</div>
+          <div id="icons">
+            <img src="resource/icons/git.png" />
+            <img src="resource/icons/github.png" />
+            <img src="resource/icons/vscode_photoshop.png" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -151,7 +176,90 @@
       <div class="page__title">
         <span>My</span>
         <span>Portfoilo</span>
-        <span id="page__title__sub">저에 대한 간단한 소개를 하겠습니다.</span>
+        <span id="page__title__sub">제가 진행한 토이 프로젝트 입니다.</span>
+      </div>
+
+      <!--프로젝트 모음-->
+      <div class="portfolio__container">
+        <div class="content">
+          <!--프로젝트 1-->
+          <div class="project">
+            <a href="https://github.com/introduce131/my_shopping_site" target="_blank">
+              <img src="./resource/project_img/project1.png" />
+            </a>
+            <div>
+              <!--프로젝트 명-->
+              <div class="project__name">
+                <p>PROJECT</p>
+                <p>Shopping site</p>
+              </div>
+              <!--프로젝트 설명-->
+              <div class="project__contents">
+                <p>PARTS</p>
+                <p>Design, Publish, F/B-end</p>
+              </div>
+            </div>
+          </div>
+
+          <!--프로젝트 2-->
+          <div class="project">
+            <a href="https://github.com/introduce131/movie_site_clone_coding" target="_blank">
+              <img src="./resource/project_img/project2.png" />
+            </a>
+            <div>
+              <!--프로젝트 명-->
+              <div class="project__name">
+                <p>PROJECT</p>
+                <p>Movie Site using API</p>
+              </div>
+              <!--프로젝트 설명-->
+              <div class="project__contents">
+                <p>PARTS</p>
+                <p>Clone Coding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--프로젝트 3-->
+        <div class="content">
+          <div class="project">
+            <a href="https://github.com/introduce131/BitMiner" target="_blank">
+              <img src="./resource/project_img/project3.png" />
+            </a>
+            <div>
+              <!--프로젝트 명-->
+              <div class="project__name">
+                <p>PROJECT</p>
+                <p>Bit Miner</p>
+              </div>
+              <!--프로젝트 설명-->
+              <div class="project__contents">
+                <p>PARTS</p>
+                <p>Design, Back-end</p>
+              </div>
+            </div>
+          </div>
+
+          <!--프로젝트 4-->
+          <div class="project">
+            <a href="https://github.com/introduce131/web-portfolio" target="_blank">
+              <img src="./resource/project_img/project4.png" />
+            </a>
+            <div>
+              <!--프로젝트 명-->
+              <div class="project__name">
+                <p>PROJECT</p>
+                <p>Web Portfolio</p>
+              </div>
+              <!--프로젝트 설명-->
+              <div class="project__contents">
+                <p>PARTS</p>
+                <p>Design, Publish, F/B-end</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -159,8 +267,45 @@
     <section class="section" id="section5">
       <!--페이지 제목-->
       <div class="page__title">
-        <span style="margin: 0 auto">Contact</span>
+        <span style="margin: 50px auto 0px auto; font-size: 44px">Contact</span>
       </div>
+
+      <div class="page__content">
+        <p>"지속적으로 트렌드와 경험을 쌓아 더 업데이트 할 예정입니다.</p>
+        <p>시간 내어 봐주셔서 감사합니다. : )"</p>
+      </div>
+
+      <div class="page__contact">
+        <!--Email-->
+        <div class="card">
+          <img src="resource/contact_icon/email.png" />
+          <p>Email</p>
+          <p>introduce131@gmail.com</p>
+        </div>
+
+        <!--Github-->
+        <div class="card">
+          <img src="resource/contact_icon/github.png" />
+          <p>Github</p>
+          <p>introduce131</p>
+        </div>
+
+        <!--카카오톡-->
+        <div class="card">
+          <img src="resource/contact_icon/talk.png" />
+          <p>KakaoTalk</p>
+          <p>introduce131</p>
+        </div>
+      </div>
+
+      <!--푸터-->
+      <footer>
+        <h1>Jongwon Baek</h1>
+        <p>~나의 발전가능성은 무한하다~</p>
+        <p>© Copyright jongwon Baek. All Rights Reserved</p>
+        <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.</p>
+        <p>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
+      </footer>
     </section>
   </body>
   <script src="./js/index.js"></script>

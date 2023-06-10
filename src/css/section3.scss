@@ -2,49 +2,118 @@
 
 #section3 {
   > .stack__container {
-    position: relative;
-    width: 90%;
-    height: 80%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 95%;
+    height: 70%;
+    margin: 50px auto auto auto;
 
-    > img:last-child {
-      position: absolute;
-      bottom: 0;
-      right: 50%;
-      transform: translateX(50%);
-      z-index: 2;
+    > div {
+      border: 1px solid rgb(172, 172, 172);
+      width: 24%;
+      border-radius: 30px;
+      max-width: 250px;
+      min-width: 225px;
+      transition: margin-top 0.3s;
+
+      > #title {
+        font: bold 22px $font-roboto;
+        color: rgb(124, 151, 238);
+        width: 80%;
+        border-bottom: 1px solid black;
+        margin: 25px auto;
+        padding-bottom: 10px;
+      }
+
+      > #icons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        height: 10%;
+      }
     }
 
-    > .stack__icon {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border: 2px solid #fff;
-      transition: transform 0.3s ease-in-out;
+    // hover 기능 구현
+    > div:hover {
+      margin-top: 10px;
     }
 
-    img:nth-child(1) {
-      top: 10%;
-      left: 35%;
+    /* Frontend  */
+    > .stack__front {
+      #icons {
+        > img:first-child {
+          width: 55%;
+        }
+        > img:nth-child(2) {
+          width: 60%;
+        }
+        > img:nth-child(3) {
+          width: 65%;
+        }
+        > img:nth-child(4) {
+          width: 70%;
+        }
+        > img:nth-child(5) {
+          width: 70%;
+        }
+        > img:nth-child(6) {
+          width: 80%;
+        }
+      }
     }
 
-    img:nth-child(2) {
-      top: 25%;
-      right: 10%;
+    /* Backend  */
+    > .stack__back {
+      #icons {
+        > img:first-child {
+          width: 55%;
+        }
+        > img:nth-child(2) {
+          width: 55%;
+        }
+        > img:nth-child(3) {
+          width: 80%;
+        }
+        > img:nth-child(4) {
+          width: 75%;
+        }
+      }
     }
 
-    img:nth-child(3) {
-      top: 50%;
-      right: 20%;
+    /* Database  */
+    > .stack__db {
+      #icons {
+        > img:first-child {
+          width: 50%;
+        }
+        > img:nth-child(2) {
+          width: 75%;
+        }
+        > img:nth-child(3) {
+          width: 70%;
+        }
+        > img:nth-child(4) {
+          margin-top: 10px;
+          width: 75%;
+        }
+      }
     }
 
-    // 추가적인 아이콘들의 위치를 설정할 수 있습니다.
-    // img:nth-child(4) { ... }
-    // img:nth-child(5) { ... }
-    // ...
-
-    img:not(:last-child):hover {
-      transform: scale(1.1);
+    /* Tools  */
+    > .stack__tools {
+      #icons {
+        > img:first-child {
+          width: 45%;
+        }
+        > img:nth-child(2) {
+          width: 70%;
+        }
+        > img:nth-child(3) {
+          width: 60%;
+        }
+      }
     }
   }
 }

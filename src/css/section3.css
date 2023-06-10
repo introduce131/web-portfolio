@@ -2,6 +2,7 @@
 /* Roboto, Nato sans */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /* Roboto, Nato sans....End*/
 /* @mixin 모음 */
 /* HTML, BODY, SECTION */
@@ -15,6 +16,10 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .section {
@@ -26,36 +31,26 @@ body {
   background-color: #f2f9ff;
 }
 
-#section2 {
+#section2,
+#section3,
+#section4,
+#section5 {
   background-color: white;
 }
 
-#section3 {
-  /* 민트 그린 -> 베이비 블루 */
-  background-color: white;
-}
-
-#section4 {
-  background-color: white;
-}
-
-#section4 {
-  background-color: white;
-}
-
-/* HTML, BODY, SECTION.... END*/
-/* 헤더 header */
+/* header */
 .header > .header__list {
   position: fixed;
   z-index: 1;
   display: flex;
+  justify-content: flex-end;
   width: 100%;
-  margin: 0;
-  padding-left: 40%;
+  padding-left: 0px;
+  margin: 0px;
   list-style: none;
   font: 16px "Roboto", sans-serif;
   color: rgb(121, 147, 235);
-  border: 1px solid white;
+  border: 1px solid rgb(121, 147, 235);
   /* 선 bottom 빼고 제거 */
   border-top: none;
   border-left: none;
@@ -66,11 +61,11 @@ body {
   cursor: pointer;
 }
 .header > .header__list > .header__list li:hover {
-  background-color: rgba(255, 252, 252, 0.5);
+  background-color: rgba(121, 147, 235, 0.5);
   transition-duration: 200ms;
 }
 .header > .header__list > .header__list__li__active {
-  background-color: rgba(255, 252, 252, 0.5);
+  background-color: rgba(192, 206, 255, 0.5);
 }
 
 /* 헤더 header.... END */
@@ -97,7 +92,6 @@ body {
   color: rgb(121, 147, 235);
 }
 
-/* 오른쪽 sideBar.... END */
 /* [페이지 제목] [서브 제목] */
 .page__title {
   padding-top: 100px;
@@ -124,38 +118,98 @@ body {
   color: rgb(73, 73, 73);
 }
 
+@media screen and (max-width: 1260px) {
+  .sideBar__list {
+    display: none;
+  }
+}
 #section3 > .stack__container {
-  position: relative;
-  width: 90%;
-  height: 80%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 95%;
+  height: 70%;
+  margin: 50px auto auto auto;
+  /* Frontend  */
+  /* Backend  */
+  /* Database  */
+  /* Tools  */
 }
-#section3 > .stack__container > img:last-child {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
-  z-index: 2;
+#section3 > .stack__container > div {
+  border: 1px solid rgb(172, 172, 172);
+  width: 24%;
+  border-radius: 30px;
+  max-width: 250px;
+  min-width: 225px;
+  transition: margin-top 0.3s;
 }
-#section3 > .stack__container > .stack__icon {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #fff;
-  transition: transform 0.3s ease-in-out;
+#section3 > .stack__container > div > #title {
+  font: bold 22px "Roboto", sans-serif;
+  color: rgb(124, 151, 238);
+  width: 80%;
+  border-bottom: 1px solid black;
+  margin: 25px auto;
+  padding-bottom: 10px;
 }
-#section3 > .stack__container img:nth-child(1) {
-  top: 10%;
-  left: 35%;
+#section3 > .stack__container > div > #icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: 10%;
 }
-#section3 > .stack__container img:nth-child(2) {
-  top: 25%;
-  right: 10%;
+#section3 > .stack__container > div:hover {
+  margin-top: 10px;
 }
-#section3 > .stack__container img:nth-child(3) {
-  top: 50%;
-  right: 20%;
+#section3 > .stack__container > .stack__front #icons > img:first-child {
+  width: 55%;
 }
-#section3 > .stack__container img:not(:last-child):hover {
-  transform: scale(1.1);
+#section3 > .stack__container > .stack__front #icons > img:nth-child(2) {
+  width: 60%;
+}
+#section3 > .stack__container > .stack__front #icons > img:nth-child(3) {
+  width: 65%;
+}
+#section3 > .stack__container > .stack__front #icons > img:nth-child(4) {
+  width: 70%;
+}
+#section3 > .stack__container > .stack__front #icons > img:nth-child(5) {
+  width: 70%;
+}
+#section3 > .stack__container > .stack__front #icons > img:nth-child(6) {
+  width: 80%;
+}
+#section3 > .stack__container > .stack__back #icons > img:first-child {
+  width: 55%;
+}
+#section3 > .stack__container > .stack__back #icons > img:nth-child(2) {
+  width: 55%;
+}
+#section3 > .stack__container > .stack__back #icons > img:nth-child(3) {
+  width: 80%;
+}
+#section3 > .stack__container > .stack__back #icons > img:nth-child(4) {
+  width: 75%;
+}
+#section3 > .stack__container > .stack__db #icons > img:first-child {
+  width: 50%;
+}
+#section3 > .stack__container > .stack__db #icons > img:nth-child(2) {
+  width: 75%;
+}
+#section3 > .stack__container > .stack__db #icons > img:nth-child(3) {
+  width: 70%;
+}
+#section3 > .stack__container > .stack__db #icons > img:nth-child(4) {
+  margin-top: 10px;
+  width: 75%;
+}
+#section3 > .stack__container > .stack__tools #icons > img:first-child {
+  width: 45%;
+}
+#section3 > .stack__container > .stack__tools #icons > img:nth-child(2) {
+  width: 70%;
+}
+#section3 > .stack__container > .stack__tools #icons > img:nth-child(3) {
+  width: 60%;
 }/*# sourceMappingURL=section3.css.map */

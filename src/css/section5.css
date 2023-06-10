@@ -123,59 +123,81 @@ body {
     display: none;
   }
 }
-#section1 {
+#section5 {
+  position: relative;
+  /* 시간 내어 ... 인사말 */
+  /* Email, github, blog */
+}
+#section5 > .page__content p {
+  font: 20px "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #383737;
+}
+#section5 > .page__contact {
+  margin: 60px auto 0px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
+  height: 20%;
+  max-width: 1400px;
 }
-#section1 > .image__container {
-  position: relative;
-  /* 화초에 바람 애니메이션, 회전변형 5도(오른쪽)*/
-  /* 개발자 팔 위, 아래로 애니메이션*/
-}
-#section1 > .image__container > #grass {
-  position: absolute;
-  top: 59.6%;
-  left: 3.5%;
-  animation: grassWind 3s ease-in-out 0s infinite;
-  transform-origin: center bottom;
-}
-#section1 > .image__container > #arm {
-  position: absolute;
-  top: 41.5%;
-  left: 37.7%;
-  animation: armShake 2s ease-in-out 0s infinite;
-}
-@keyframes grassWind {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  50% {
-    transform: rotateZ(5deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-@keyframes armShake {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-#section1 > .page__title {
+#section5 > .page__contact > .card {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  font: 40px "Noto Sans KR", sans-serif;
-  color: rgb(37, 37, 37);
-  letter-spacing: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-#section1 > .page__title > p {
-  margin: 0;
-}/*# sourceMappingURL=section1.css.map */
+#section5 > .page__contact > .card > img {
+  width: 50px;
+  height: 30%;
+  max-height: 50px;
+}
+#section5 > .page__contact > .card > img {
+  width: 50px;
+  height: 30%;
+  max-height: 50px;
+}
+#section5 > .page__contact > .card > p:nth-child(2) {
+  font: bold 25px "Roboto", sans-serif;
+  margin: 20px 0px 0px 0px;
+}
+#section5 > .page__contact > .card > p:nth-child(3) {
+  font: 16px "Roboto", sans-serif;
+  color: #494949;
+}
+#section5 > footer {
+  font: 13px "Noto Sans KR", sans-serif;
+  position: absolute;
+  background-color: rgb(121, 147, 235);
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+}
+#section5 > footer > h1 {
+  margin-top: 30px;
+  font: bold 30px "Satisfy", cursive;
+  color: white;
+  text-align: center;
+}
+#section5 > footer > p:nth-child(2) {
+  font: 12px "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: white;
+}
+#section5 > footer > p:nth-child(3) {
+  margin-top: 35px;
+  text-align: center;
+  color: white;
+}
+#section5 > footer > p:nth-child(4) {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+#section5 > footer > p:nth-child(5) {
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=section5.css.map */
