@@ -118,8 +118,8 @@ body {
   color: rgb(73, 73, 73);
 }
 
-@media screen and (max-width: 1260px) {
-  .sideBar__list {
+@media screen and (max-width: 1250px) {
+  .sideBar {
     display: none;
   }
 }

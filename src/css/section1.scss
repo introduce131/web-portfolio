@@ -49,13 +49,14 @@
       }
     }
   }
-  > .page__title {
+  > .main__title {
     display: flex;
     flex-direction: column;
     width: 40%;
     font: 40px $font-natoSans;
     color: rgb(37, 37, 37);
     letter-spacing: 5px;
+    gap: 30px;
 
     > p {
       margin: 0;

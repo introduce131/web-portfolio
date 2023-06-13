@@ -76,6 +76,7 @@ $(document).ready(function () {
   $(".header__list li").click(function () {
     var index = $(this).index() + 1; // 인덱스는 0부터 시작하므로 1을 더함
     setHeader(index);
+    page = index; // 그리고 전역변수 page에 현재 인덱스값 저장
 
     var section = $(".section").eq(index - 1); // 다시 1빼면 됨
     $("html, body").animate(
@@ -90,6 +91,7 @@ $(document).ready(function () {
   $(".sideBar__list li").click(function () {
     var index = $(this).index() + 1; // 1더하기
     setHeader(index);
+    page = index; // 그리고 전역변수 page에 현재 인덱스값 저장
 
     var section = $(".section").eq(index - 1); // 다시 1 빼기
     $("html, body").animate(

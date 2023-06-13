@@ -118,8 +118,8 @@ body {
   color: rgb(73, 73, 73);
 }
 
-@media screen and (max-width: 1260px) {
-  .sideBar__list {
+@media screen and (max-width: 1250px) {
+  .sideBar {
     display: none;
   }
 }
@@ -168,14 +168,15 @@ body {
     transform: translateY(0%);
   }
 }
-#section1 > .page__title {
+#section1 > .main__title {
   display: flex;
   flex-direction: column;
   width: 40%;
   font: 40px "Noto Sans KR", sans-serif;
   color: rgb(37, 37, 37);
   letter-spacing: 5px;
+  gap: 30px;
 }
-#section1 > .page__title > p {
+#section1 > .main__title > p {
   margin: 0;
 }/*# sourceMappingURL=section1.css.map */
