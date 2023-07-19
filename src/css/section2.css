@@ -165,7 +165,7 @@ body {
 #section2 > .page__content > #content__left > #profile {
   width: 160px;
   height: 210px;
-  border-radius: 45%;
+  border-radius: 15%;
   margin: 0 auto;
 }
 #section2 > .page__content > #content__left > #sub__title {
