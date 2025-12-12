@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* Roboto, Nato sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* Roboto, Nato sans....End*/
+/* @mixin 모음 */
+/* HTML, BODY, SECTION */
+html {
+  overflow: auto;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+#section1 {
+  background-color: #f2f9ff;
+}
+
+#section2,
+#section3,
+#section4,
+#section5 {
+  background-color: white;
+}
+
+/* header */
+.header > .header__list {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-left: 0px;
+  margin: 0px;
+  list-style: none;
+  font: 16px "Roboto", sans-serif;
+  color: rgb(121, 147, 235);
+  border: 1px solid rgb(121, 147, 235);
+  /* 선 bottom 빼고 제거 */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.header > .header__list li {
+  padding: 18px 25px;
+  cursor: pointer;
+}
+.header > .header__list > .header__list li:hover {
+  background-color: rgba(121, 147, 235, 0.5);
+  transition-duration: 200ms;
+}
+.header > .header__list > .header__list__li__active {
+  background-color: rgba(192, 206, 255, 0.5);
+}
+
+/* 헤더 header.... END */
+/* 오른쪽 sideBar */
+.sideBar > .sideBar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  margin-top: -72.5px;
+  transform: translateY(-10%);
+  list-style: none;
+  padding-left: 0px;
+  background-color: transparent;
+  color: rgb(173, 173, 173);
+  z-index: 1;
+}
+.sideBar > .sideBar__list > li {
+  cursor: pointer;
+}
+.sideBar > .sideBar__list > .sideBar__list__li__active {
+  color: rgb(121, 147, 235);
+}
+
+/* [페이지 제목] [서브 제목] */
+.page__title {
+  padding-top: 100px;
+  padding-left: 30px;
+  display: flex;
+  gap: 15px;
+}
+.page__title span:first-child {
+  /* About */
+  font: 38px "Roboto", sans-serif;
+  color: rgb(71, 106, 221);
+}
+.page__title span:nth-child(2) {
+  /* Me */
+  font: 38px "Roboto", sans-serif;
+}
+.page__title #page__title__sub {
+  /* 서브타이틀 */
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-top: 10px;
+  font: 17px "Noto Sans KR", sans-serif;
+  color: rgb(73, 73, 73);
+}
+
+@media screen and (max-width: 1250px) {
+  .sideBar {
+    display: none;
+  }
+}
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section1 > .image__container {
+  position: relative;
+  /* 화초에 바람 애니메이션, 회전변형 5도(오른쪽)*/
+  /* 개발자 팔 위, 아래로 애니메이션*/
+}
+#section1 > .image__container > #grass {
+  position: absolute;
+  top: 59.6%;
+  left: 3.5%;
+  animation: grassWind 3s ease-in-out 0s infinite;
+  transform-origin: center bottom;
+}
+#section1 > .image__container > #arm {
+  position: absolute;
+  top: 41.5%;
+  left: 37.7%;
+  animation: armShake 2s ease-in-out 0s infinite;
+}
+@keyframes grassWind {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes armShake {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#section1 > .main__title {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font: 40px "Noto Sans KR", sans-serif;
+  color: rgb(37, 37, 37);
+  letter-spacing: 5px;
+  gap: 30px;
+}
+#section1 > .main__title > p {
+  margin: 0;
+}
+}/*# sourceMappingURL=section1.css.map */

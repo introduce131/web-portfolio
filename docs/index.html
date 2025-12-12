@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BJW's Portfolio</title>
+    <!-- jQuery removed: converted scripts to vanilla JS -->
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="css/section1.css" />
+    <link rel="stylesheet" type="text/css" href="css/section2.css" />
+    <link rel="stylesheet" type="text/css" href="css/section3.css" />
+    <link rel="stylesheet" type="text/css" href="css/section4.css" />
+    <link rel="stylesheet" type="text/css" href="css/section5.css" />
+  </head>
+  <body>
+    <!--헤더 부분에 해당함-->
+    <div class="header">
+      <ul class="header__list">
+        <li>Home</li>
+        <li>About Me</li>
+        <li>Tech Stack</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <!--사이드 네비게이션 바-->
+    <div class="sideBar">
+      <ul class="sideBar__list">
+        <li>●</li>
+        <li>●</li>
+        <li>●</li>
+        <li>●</li>
+        <li>●</li>
+      </ul>
+    </div>
+
+    <!--https://devhyun.com/-->
+    <!--섹션 1 [Home]-->
+    <section class="section" id="section1">
+      <div class="main__title">
+        <p>BAEK</p>
+        <p>JONG WON</p>
+        <p>WEB PORTFOLIO</p>
+      </div>
+
+      <div class="image__container">
+        <img src="./resource/img/developer.png" width="500px" height="500px" />
+        <img src="./resource/img/arm.png" width="128px" height="108px" id="arm" />
+        <img src="./resource/img/grass.png" width="100px" height="120px" id="grass" />
+      </div>
+    </section>
+
+    <!--섹션 2 [About me]-->
+    <section class="section" id="section2">
+      <!--페이지 제목-->
+      <div class="page__title">
+        <span>About</span>
+        <span>Me</span>
+        <span id="page__title__sub">저에 대한 간단한 소개를 하겠습니다.</span>
+      </div>
+
+      <br /><br /><br />
+
+      <!--페이지 내용 부분에 해당함-->
+      <div class="page__content">
+        <div id="content__left">
+          <ul class="profile__aboutme">
+            <li>안녕하세요!</li>
+            <li>지속적인 발전을 추구하는 백종원입니다</li>
+          </ul>
+          <br />
+          <img src="./resource/img/profile.jpg" alt="프로필 사진" id="profile" />
+          <br /><br />
+          <h3>About me</h3>
+          <div class="keywordList__container">
+            <ul>
+              <li>이름 : 백종원</li>
+              <li>생년월일 : 01. 01. 27</li>
+              <li>#긍정적 #꼼꼼함 #끈기</li>
+              <li>취미 : 강아지와 산책</li>
+              <li>MBTI : ISTJ</li>
+              <li>E-mail : introduce131@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div id="content__right">
+          <br /><br />
+          <h3>Profile</h3>
+          <div class="profile__introduce">
+            <ul>
+              <li>야간 자율학습 시간, 친구가 보고 있던 C언어 책을 우연히 보게 되었고,</li>
+              <li>"Hello, World!" 를 직접 출력해보며 개발에 흥미를 갖게 되었습니다.</li>
+              <li>섬세한 코드 작성과 효율적인 아키텍처 설계를 목표로 삼고 있습니다.</li>
+              <br />
+              <li>협업과 커뮤니케이션 능력을 중요시 여기며, 목표 달성에 기여하겠습니다.</li>
+              <li>문제 해결에 대한 열정과 도전정신을 가지고 있으며, 지속적인 테스트와</li>
+              <li>코드 리뷰를 통해 성능을 향상시키고 결함을 최소화하기 위해 노력하겠습니다.</li>
+            </ul>
+          </div>
+          <br /><br />
+          <h3>Experiences</h3>
+          <div class="profile__experiences">
+            <!--경력 기간-->
+            <div>
+              <ul>
+                <li>2017.03 ~ 2019.02</li>
+                <li>2017.09 ~ 2020.06</li>
+                <li>&nbsp;</li>
+                <li>2021.03 ~ 2022.09</li>
+                <li>2023.03 ~ 2026.02</li>
+              </ul>
+            </div>
+
+            <!--경력 상세-->
+            <div>
+              <ul>
+                <li>[일학습병행제] SW개발_L3과정 이수</li>
+                <li>(주)메트로소프트 근무</li>
+                <li>HIS, KIOSK 개발 및 유지보수, 클라이언트 응대 업무</li>
+                <li>육군 7기동군단 제1강습대대</li>
+                <li>동양미래대 재학중</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--섹션 3 [Tech Stack]-->
+    <section class="section" id="section3">
+      <!--페이지 제목-->
+      <div class="page__title">
+        <span>Tech</span>
+        <span>Stack</span>
+        <span id="page__title__sub">개발에 필요한 다양한 기술을 공부하고 있습니다.</span>
+      </div>
+      <!--내용 컨테이너-->
+      <div class="stack__container">
+        <div class="stack__front">
+          <div id="title">Frontend</div>
+          <div id="icons">
+            <img src="resource/icons/html_css.png" />
+            <img src="resource/icons/js_ts.png" />
+            <img src="resource/icons/React.png" />
+            <img src="resource/icons/sass_jquery.png" />
+            <img src="resource/icons/zotai.png" />
+            <img src="resource/icons/styledcomponent_tailwind.png" />
+          </div>
+        </div>
+        <div class="stack__back">
+          <div id="title">Backend</div>
+          <div id="icons">
+            <img src="resource/icons/java.png" />
+            <img src="resource/icons/csharp_cplus.png" />
+            <img src="resource/icons/nodejs.png" />
+            <img src="resource/icons/firebase.png" />
+          </div>
+        </div>
+        <div class="stack__db">
+          <div id="title">Database</div>
+          <div id="icons">
+            <img src="resource/icons/mysql.png" />
+            <img src="resource/icons/sqlserver.png" />
+            <img src="resource/icons/firebase.png" />
+            <img src="resource/icons/oracle.png" />
+          </div>
+        </div>
+        <div class="stack__tools">
+          <div id="title">Tools</div>
+          <div id="icons">
+            <img src="resource/icons/git.png" />
+            <img src="resource/icons/github.png" />
+            <img src="resource/icons/vscode_photoshop.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--섹션 4 [Portfoilo]-->
+    <section class="section" id="section4">
+      <!--페이지 제목-->
+      <div class="page__title">
+        <span>My</span>
+        <span>Portfoilo</span>
+        <span id="page__title__sub">제가 진행한 토이 프로젝트 입니다.</span>
+      </div>
+
+      <!--프로젝트 모음 (슬라이더로 변경) -->
+      <div class="portfolio__container slider" id="portfolio-slider">
+        <div class="slides">
+          <div class="slide">
+            <div class="project">
+              <a href="https://github.com/introduce131/my_shopping_site" target="_blank" class="project__image">
+                <img src="./resource/project_img/project1.png" alt="Shopping site" />
+              </a>
+              <div class="project__info">
+                <h3>Shopping site</h3>
+                <p>웹 서비스의 기본 구조를 익히기 위해 제작한 쇼핑몰 프로젝트로,
+상품 조회, 상세 페이지, 장바구니 기능을 포함해 UI 구성과 상태 관리 흐름을 실습했습니다.
+작은 규모의 프로젝트지만 컴포넌트 분리, 데이터 흐름, 사용자 인터랙션 구현 등 웹 개발의 기초를 실습한 경험입니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="project">
+              <a href="https://.com/introduce131/recycling-app-for-android" target="_blank" class="project__image">
+                <img src="./resource/project_img/project2.png" alt="ECOBIN" />
+              </a>
+              <div class="project__info">
+                <h3>ECOBIN</h3>
+                <p>ECOBIN은 환경 보호를 위한 올바른 재활용 방법을 안내합니다.
+자원을 올바르게 분리배출 하는 방법을 제공하고, 현재 내 위치 근처의 탄소중립포인트 사용처 정보를 제공하고
+실시간으로 걸음 수에 비례한 탄소저감량을 표시함으로써 재활용 활동을 더욱 편리하고 효과적으로 만들고자 하는 목적을 가진 애플리케이션입니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="project">
+              <a href="https://github.com/introduce131/on-mohae" target="_blank" class="project__image">
+                <img src="./resource/project_img/project3.png" alt="on-mohae" />
+              </a>
+              <div class="project__info">
+                <h3>오늘 뭐할까?</h3>
+                <p>사용자의 위치와 취향을 기반으로 식당·카페·여가시설 등을 추천해 주는 웹 서비스입니다.
+Supabase와 FastAPI로 구축한 API 서버를 통해 장소 정보, 메뉴, 영업시간 등을 제공하며,
+사용자는 찜·조회 기록을 기반으로 개인화된 추천을 받을 수 있습니다.
+React 기반 UI로 코스 생성, 예산·거리 필터링, 상세 정보 조회 등 다양한 기능을 제공합니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="project">
+              <a href="https://github.com/introduce131/web-portfolio" target="_blank" class="project__image">
+                <img src="./resource/project_img/project4.png" alt="Web Portfolio" />
+              </a>
+              <div class="project__info">
+                <h3>Web Portfolio</h3>
+                <p>개발자로서의 프로젝트와 기술 스택을 정리해 소개하는 개인 웹 포트폴리오 사이트입니다.
+전체 레이아웃과 UI를 직접 설계하고 구현했으며, 프로젝트별 설명과 기술 스택 정리를 통해 제 작업물을 한눈에 볼 수 있도록 구성했습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider__arrow slider__prev" aria-label="Previous">‹</button>
+        <button class="slider__arrow slider__next" aria-label="Next">›</button>
+        <div class="slider__dots" role="tablist" aria-label="Slider dots"></div>
+      </div>
+    </section>
+
+    <!--섹션 5 [Contact]-->
+    <section class="section" id="section5">
+      <!--페이지 제목-->
+      <div class="page__title">
+        <span style="margin: 50px auto 0px auto; font-size: 44px">Contact</span>
+      </div>
+
+      <div class="page__content">
+        <p>"지속적으로 트렌드와 경험을 쌓아 더 업데이트 할 예정입니다.</p>
+        <p>시간 내어 봐주셔서 감사합니다. : )"</p>
+      </div>
+
+      <div class="page__contact">
+        <!--Email-->
+        <div class="card">
+          <img src="resource/contact_icon/email.png" />
+          <p>Email</p>
+          <p>introduce131@gmail.com</p>
+        </div>
+
+        <!--Github-->
+        <div class="card">
+          <img src="resource/contact_icon/github.png" />
+          <p>Github</p>
+          <p>introduce131</p>
+        </div>
+
+        <!--카카오톡-->
+        <div class="card">
+          <img src="resource/contact_icon/talk.png" />
+          <p>KakaoTalk</p>
+          <p>introduce131</p>
+        </div>
+      </div>
+
+      <!--푸터-->
+      <footer>
+        <h1>Jongwon Baek</h1>
+        <p>~나의 발전가능성은 무한하다~</p>
+        <p>© Copyright jongwon Baek. All Rights Reserved</p>
+        <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.</p>
+        <p>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
+      </footer>
+    </section>
+  </body>
+  <script src="./js/index.js"></script>
+  <script src="./js/section2.js"></script>
+  <script src="./js/section3.js"></script>
+</html>

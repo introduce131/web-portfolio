@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* Roboto, Nato sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* Roboto, Nato sans....End*/
+/* @mixin 모음 */
+/* HTML, BODY, SECTION */
+html {
+  overflow: auto;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+#section1 {
+  background-color: #f2f9ff;
+}
+
+#section2,
+#section3,
+#section4,
+#section5 {
+  background-color: white;
+}
+
+/* header */
+.header > .header__list {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-left: 0px;
+  margin: 0px;
+  list-style: none;
+  font: 16px "Roboto", sans-serif;
+  color: rgb(121, 147, 235);
+  border: 1px solid rgb(121, 147, 235);
+  /* 선 bottom 빼고 제거 */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.header > .header__list li {
+  padding: 18px 25px;
+  cursor: pointer;
+}
+.header > .header__list > .header__list li:hover {
+  background-color: rgba(121, 147, 235, 0.5);
+  transition-duration: 200ms;
+}
+.header > .header__list > .header__list__li__active {
+  background-color: rgba(192, 206, 255, 0.5);
+}
+
+/* 헤더 header.... END */
+/* 오른쪽 sideBar */
+.sideBar > .sideBar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  margin-top: -72.5px;
+  transform: translateY(-10%);
+  list-style: none;
+  padding-left: 0px;
+  background-color: transparent;
+  color: rgb(173, 173, 173);
+  z-index: 1;
+}
+.sideBar > .sideBar__list > li {
+  cursor: pointer;
+}
+.sideBar > .sideBar__list > .sideBar__list__li__active {
+  color: rgb(121, 147, 235);
+}
+
+/* [페이지 제목] [서브 제목] */
+.page__title {
+  padding-top: 100px;
+  padding-left: 30px;
+  display: flex;
+  gap: 15px;
+}
+.page__title span:first-child {
+  /* About */
+  font: 38px "Roboto", sans-serif;
+  color: rgb(71, 106, 221);
+}
+.page__title span:nth-child(2) {
+  /* Me */
+  font: 38px "Roboto", sans-serif;
+}
+.page__title #page__title__sub {
+  /* 서브타이틀 */
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-top: 10px;
+  font: 17px "Noto Sans KR", sans-serif;
+  color: rgb(73, 73, 73);
+}
+
+@media screen and (max-width: 1250px) {
+  .sideBar {
+    display: none;
+  }
+}
+#section5 {
+  position: relative;
+  /* 시간 내어 ... 인사말 */
+  /* Email, github, blog */
+}
+#section5 > .page__content p {
+  font: 20px "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #383737;
+}
+#section5 > .page__contact {
+  margin: 60px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 20%;
+  max-width: 1400px;
+}
+#section5 > .page__contact > .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#section5 > .page__contact > .card > img {
+  width: 50px;
+  height: 30%;
+  max-height: 50px;
+}
+#section5 > .page__contact > .card > img {
+  width: 50px;
+  height: 30%;
+  max-height: 50px;
+}
+#section5 > .page__contact > .card > p:nth-child(2) {
+  font: bold 25px "Roboto", sans-serif;
+  margin: 20px 0px 0px 0px;
+}
+#section5 > .page__contact > .card > p:nth-child(3) {
+  font: 16px "Roboto", sans-serif;
+  color: #494949;
+}
+#section5 > footer {
+  font: 13px "Noto Sans KR", sans-serif;
+  position: absolute;
+  background-color: rgb(121, 147, 235);
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+}
+#section5 > footer > h1 {
+  margin-top: 30px;
+  font: bold 30px "Satisfy", cursive;
+  color: white;
+  text-align: center;
+}
+#section5 > footer > p:nth-child(2) {
+  font: 12px "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: white;
+}
+#section5 > footer > p:nth-child(3) {
+  margin-top: 35px;
+  text-align: center;
+  color: white;
+}
+#section5 > footer > p:nth-child(4) {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+#section5 > footer > p:nth-child(5) {
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=section5.css.map */

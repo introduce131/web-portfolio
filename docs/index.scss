@@ -1,0 +1,147 @@
+/* Roboto, Nato sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+$font-natoSans: "Noto Sans KR", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$font-openSans: "Open Sans", sans-serif;
+$font-satisfy: "Satisfy", cursive;
+
+/* Roboto, Nato sans....End*/
+/* @mixin 모음 */
+@mixin setBottomBorder() {
+  /* 선 bottom 빼고 제거 */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* HTML, BODY, SECTION */
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+}
+
+#section1 {
+  background-color: #f2f9ff;
+}
+
+#section2,
+#section3,
+#section4,
+#section5 {
+  background-color: white;
+}
+
+/* header */
+.header {
+  & > .header__list {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 0px;
+    margin: 0px;
+    list-style: none;
+    font: 16px $font-roboto;
+    color: rgb(121, 147, 235);
+    border: 1px solid rgb(121, 147, 235);
+    @include setBottomBorder();
+  }
+
+  & > .header__list li {
+    padding: 18px 25px;
+    cursor: pointer;
+  }
+
+  & > .header__list > .header__list li:hover {
+    background-color: rgba(121, 147, 235, 0.5);
+    transition-duration: 200ms;
+  }
+
+  // JS에서 페이지 활성화에 사용할 범용 클래스
+  & > .header__list > .header__list__li__active {
+    background-color: rgba(192, 206, 255, 0.5);
+  }
+}
+/* 헤더 header.... END */
+
+/* 오른쪽 sideBar */
+.sideBar {
+  > .sideBar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    margin-top: -72.5px;
+    transform: translateY(-10%);
+    list-style: none;
+    padding-left: 0px;
+    background-color: transparent;
+    color: rgb(173, 173, 173);
+    z-index: 1;
+
+    > li {
+      cursor: pointer;
+    }
+
+    > .sideBar__list__li__active {
+      color: rgb(121, 147, 235);
+    }
+  }
+}
+
+/* [페이지 제목] [서브 제목] */
+.page__title {
+  padding-top: 100px;
+  padding-left: 30px;
+  display: flex;
+  gap: 15px;
+
+  span:first-child {
+    /* About */
+    font: 38px $font-roboto;
+    color: rgb(71, 106, 221);
+  }
+
+  span:nth-child(2) {
+    /* Me */
+    font: 38px $font-roboto;
+  }
+
+  #page__title__sub {
+    /* 서브타이틀 */
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 10px;
+    font: 17px $font-natoSans;
+    color: rgb(73, 73, 73);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .sideBar {
+    display: none;
+  }
+}

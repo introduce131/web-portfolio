@@ -1,0 +1,109 @@
+@import "../index.scss";
+
+#section2 {
+  position: relative;
+
+  /* 페이지 콘텐츠 2개 영역 */
+  > .page__content {
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    height: 70%;
+    min-height: 650px;
+    min-width: 980px;
+    max-width: 1250px;
+    border-radius: 30px;
+    background-color: #fafaff;
+
+    > #content__left {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-radius: 30px 0px 0px 30px;
+      background-color: rgb(146, 167, 235);
+      width: 40%;
+
+      /* About me*/
+      > h3 {
+        font: 20px $font-roboto;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      > .profile__aboutme {
+        list-style: none;
+        padding-left: 20px;
+        text-align: center;
+        font: 16px $font-natoSans;
+        font-weight: 600;
+        line-height: 35px;
+        margin-top: 80px;
+      }
+
+      /* 프로필 사진 */
+      > #profile {
+        width: 160px;
+        height: 210px;
+        border-radius: 15%;
+        margin: 0 auto;
+      }
+
+      > #sub__title {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      > .keywordList__container {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 100%;
+
+        > ul {
+          padding-left: 10px;
+        }
+
+        > ul li {
+          font: 16px $font-natoSans;
+          font-weight: 600;
+          list-style: none;
+          position: absolute;
+          height: 20px;
+          padding: 0px 30px;
+          transition: all 0.8s;
+        }
+      }
+    }
+
+    > #content__right {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding-right: 10px;
+
+      > h3 {
+        padding-left: 20px;
+        font: 20px $font-roboto;
+        font-weight: 600;
+      }
+
+      > .profile__introduce ul {
+        list-style: none;
+        padding-left: 10px;
+        text-align: left;
+        padding-left: 40px;
+        font: 16px $font-natoSans;
+      }
+
+      > .profile__experiences {
+        display: flex;
+        gap: 10px;
+        > div > ul {
+          list-style: none;
+          padding-left: 40px;
+          line-height: 25px;
+          font: 16px $font-natoSans;
+        }
+      }
+    }
+  }
+}

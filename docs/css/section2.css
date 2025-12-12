@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* Roboto, Nato sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* Roboto, Nato sans....End*/
+/* @mixin 모음 */
+/* HTML, BODY, SECTION */
+html {
+  overflow: auto;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+#section1 {
+  background-color: #f2f9ff;
+}
+
+#section2,
+#section3,
+#section4,
+#section5 {
+  background-color: white;
+}
+
+/* header */
+.header > .header__list {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-left: 0px;
+  margin: 0px;
+  list-style: none;
+  font: 16px "Roboto", sans-serif;
+  color: rgb(121, 147, 235);
+  border: 1px solid rgb(121, 147, 235);
+  /* 선 bottom 빼고 제거 */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.header > .header__list li {
+  padding: 18px 25px;
+  cursor: pointer;
+}
+.header > .header__list > .header__list li:hover {
+  background-color: rgba(121, 147, 235, 0.5);
+  transition-duration: 200ms;
+}
+.header > .header__list > .header__list__li__active {
+  background-color: rgba(192, 206, 255, 0.5);
+}
+
+/* 헤더 header.... END */
+/* 오른쪽 sideBar */
+.sideBar > .sideBar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  margin-top: -72.5px;
+  transform: translateY(-10%);
+  list-style: none;
+  padding-left: 0px;
+  background-color: transparent;
+  color: rgb(173, 173, 173);
+  z-index: 1;
+}
+.sideBar > .sideBar__list > li {
+  cursor: pointer;
+}
+.sideBar > .sideBar__list > .sideBar__list__li__active {
+  color: rgb(121, 147, 235);
+}
+
+/* [페이지 제목] [서브 제목] */
+.page__title {
+  padding-top: 100px;
+  padding-left: 30px;
+  display: flex;
+  gap: 15px;
+}
+.page__title span:first-child {
+  /* About */
+  font: 38px "Roboto", sans-serif;
+  color: rgb(71, 106, 221);
+}
+.page__title span:nth-child(2) {
+  /* Me */
+  font: 38px "Roboto", sans-serif;
+}
+.page__title #page__title__sub {
+  /* 서브타이틀 */
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-top: 10px;
+  font: 17px "Noto Sans KR", sans-serif;
+  color: rgb(73, 73, 73);
+}
+
+@media screen and (max-width: 1250px) {
+  .sideBar {
+    display: none;
+  }
+}
+#section2 {
+  position: relative;
+  /* 페이지 콘텐츠 2개 영역 */
+}
+#section2 > .page__content {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  height: 70%;
+  min-height: 650px;
+  min-width: 980px;
+  max-width: 1250px;
+  border-radius: 30px;
+  background-color: #fafaff;
+}
+#section2 > .page__content > #content__left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 30px 0px 0px 30px;
+  background-color: rgb(146, 167, 235);
+  width: 40%;
+  /* About me*/
+  /* 프로필 사진 */
+}
+#section2 > .page__content > #content__left > h3 {
+  font: 20px "Roboto", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+#section2 > .page__content > #content__left > .profile__aboutme {
+  list-style: none;
+  padding-left: 20px;
+  text-align: center;
+  font: 16px "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  line-height: 35px;
+  margin-top: 80px;
+}
+#section2 > .page__content > #content__left > #profile {
+  width: 160px;
+  height: 210px;
+  border-radius: 15%;
+  margin: 0 auto;
+}
+#section2 > .page__content > #content__left > #sub__title {
+  margin: 0 auto;
+  text-align: center;
+}
+#section2 > .page__content > #content__left > .keywordList__container {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100%;
+}
+#section2 > .page__content > #content__left > .keywordList__container > ul {
+  padding-left: 10px;
+}
+#section2 > .page__content > #content__left > .keywordList__container > ul li {
+  font: 16px "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  list-style: none;
+  position: absolute;
+  height: 20px;
+  padding: 0px 30px;
+  transition: all 0.8s;
+}
+#section2 > .page__content > #content__right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 10px;
+}
+#section2 > .page__content > #content__right > h3 {
+  padding-left: 20px;
+  font: 20px "Roboto", sans-serif;
+  font-weight: 600;
+}
+#section2 > .page__content > #content__right > .profile__introduce ul {
+  list-style: none;
+  padding-left: 10px;
+  text-align: left;
+  padding-left: 40px;
+  font: 16px "Noto Sans KR", sans-serif;
+}
+#section2 > .page__content > #content__right > .profile__experiences {
+  display: flex;
+  gap: 10px;
+}
+#section2 > .page__content > #content__right > .profile__experiences > div > ul {
+  list-style: none;
+  padding-left: 40px;
+  line-height: 25px;
+  font: 16px "Noto Sans KR", sans-serif;
+}/*# sourceMappingURL=section2.css.map */

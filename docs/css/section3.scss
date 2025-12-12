@@ -1,0 +1,119 @@
+@import "../index.scss";
+
+#section3 {
+  > .stack__container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 95%;
+    height: 70%;
+    margin: 50px auto auto auto;
+
+    > div {
+      border: 1px solid rgb(172, 172, 172);
+      width: 24%;
+      border-radius: 30px;
+      max-width: 250px;
+      min-width: 225px;
+      transition: margin-top 0.3s;
+
+      > #title {
+        font: bold 22px $font-roboto;
+        color: rgb(124, 151, 238);
+        width: 80%;
+        border-bottom: 1px solid black;
+        margin: 25px auto;
+        padding-bottom: 10px;
+      }
+
+      > #icons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        height: 10%;
+      }
+    }
+
+    // hover 기능 구현
+    > div:hover {
+      margin-top: 10px;
+    }
+
+    /* Frontend  */
+    > .stack__front {
+      #icons {
+        > img:first-child {
+          width: 55%;
+        }
+        > img:nth-child(2) {
+          width: 60%;
+        }
+        > img:nth-child(3) {
+          width: 65%;
+        }
+        > img:nth-child(4) {
+          width: 70%;
+        }
+        > img:nth-child(5) {
+          width: 70%;
+        }
+        > img:nth-child(6) {
+          width: 80%;
+        }
+      }
+    }
+
+    /* Backend  */
+    > .stack__back {
+      #icons {
+        > img:first-child {
+          width: 55%;
+        }
+        > img:nth-child(2) {
+          width: 55%;
+        }
+        > img:nth-child(3) {
+          width: 80%;
+        }
+        > img:nth-child(4) {
+          width: 75%;
+        }
+      }
+    }
+
+    /* Database  */
+    > .stack__db {
+      #icons {
+        > img:first-child {
+          width: 50%;
+        }
+        > img:nth-child(2) {
+          width: 75%;
+        }
+        > img:nth-child(3) {
+          width: 70%;
+        }
+        > img:nth-child(4) {
+          margin-top: 10px;
+          width: 75%;
+        }
+      }
+    }
+
+    /* Tools  */
+    > .stack__tools {
+      #icons {
+        > img:first-child {
+          width: 45%;
+        }
+        > img:nth-child(2) {
+          width: 70%;
+        }
+        > img:nth-child(3) {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
