@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>BJW's Portfolio</title>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- jQuery removed: converted scripts to vanilla JS -->
 
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <link rel="stylesheet" type="text/css" href="css/section1.css" />
@@ -186,87 +186,69 @@
         <span id="page__title__sub">제가 진행한 토이 프로젝트 입니다.</span>
       </div>
 
-      <!--프로젝트 모음-->
-      <div class="portfolio__container">
-        <div class="content">
-          <!--프로젝트 1-->
-          <div class="project">
-            <a href="https://github.com/introduce131/my_shopping_site" target="_blank">
-              <img src="./resource/project_img/project1.png" />
-            </a>
-            <div>
-              <!--프로젝트 명-->
-              <div class="project__name">
-                <p>PROJECT</p>
-                <p>Shopping site</p>
-              </div>
-              <!--프로젝트 설명-->
-              <div class="project__contents">
-                <p>PARTS</p>
-                <p>Design, Publish, F/B-end</p>
+      <!--프로젝트 모음 (슬라이더로 변경) -->
+      <div class="portfolio__container slider" id="portfolio-slider">
+        <div class="slides">
+          <div class="slide">
+            <div class="project">
+              <a href="https://github.com/introduce131/my_shopping_site" target="_blank" class="project__image">
+                <img src="./resource/project_img/project1.png" alt="Shopping site" />
+              </a>
+              <div class="project__info">
+                <h3>Shopping site</h3>
+                <p>웹 서비스의 기본 구조를 익히기 위해 제작한 쇼핑몰 프로젝트로,
+상품 조회, 상세 페이지, 장바구니 기능을 포함해 UI 구성과 상태 관리 흐름을 실습했습니다.
+작은 규모의 프로젝트지만 컴포넌트 분리, 데이터 흐름, 사용자 인터랙션 구현 등 웹 개발의 기초를 실습한 경험입니다.</p>
               </div>
             </div>
           </div>
 
-          <!--프로젝트 2-->
-          <div class="project">
-            <a href="https://github.com/introduce131/movie_site_clone_coding" target="_blank">
-              <img src="./resource/project_img/project2.png" />
-            </a>
-            <div>
-              <!--프로젝트 명-->
-              <div class="project__name">
-                <p>PROJECT</p>
-                <p>Movie Site using API</p>
+          <div class="slide">
+            <div class="project">
+              <a href="https://.com/introduce131/recycling-app-for-android" target="_blank" class="project__image">
+                <img src="./resource/project_img/project2.png" alt="ECOBIN" />
+              </a>
+              <div class="project__info">
+                <h3>ECOBIN</h3>
+                <p>ECOBIN은 환경 보호를 위한 올바른 재활용 방법을 안내합니다.
+자원을 올바르게 분리배출 하는 방법을 제공하고, 현재 내 위치 근처의 탄소중립포인트 사용처 정보를 제공하고
+실시간으로 걸음 수에 비례한 탄소저감량을 표시함으로써 재활용 활동을 더욱 편리하고 효과적으로 만들고자 하는 목적을 가진 애플리케이션입니다.</p>
               </div>
-              <!--프로젝트 설명-->
-              <div class="project__contents">
-                <p>PARTS</p>
-                <p>Clone Coding</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="project">
+              <a href="https://github.com/introduce131/on-mohae" target="_blank" class="project__image">
+                <img src="./resource/project_img/project3.png" alt="on-mohae" />
+              </a>
+              <div class="project__info">
+                <h3>오늘 뭐할까?</h3>
+                <p>사용자의 위치와 취향을 기반으로 식당·카페·여가시설 등을 추천해 주는 웹 서비스입니다.
+Supabase와 FastAPI로 구축한 API 서버를 통해 장소 정보, 메뉴, 영업시간 등을 제공하며,
+사용자는 찜·조회 기록을 기반으로 개인화된 추천을 받을 수 있습니다.
+React 기반 UI로 코스 생성, 예산·거리 필터링, 상세 정보 조회 등 다양한 기능을 제공합니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="project">
+              <a href="https://github.com/introduce131/web-portfolio" target="_blank" class="project__image">
+                <img src="./resource/project_img/project4.png" alt="Web Portfolio" />
+              </a>
+              <div class="project__info">
+                <h3>Web Portfolio</h3>
+                <p>개발자로서의 프로젝트와 기술 스택을 정리해 소개하는 개인 웹 포트폴리오 사이트입니다.
+전체 레이아웃과 UI를 직접 설계하고 구현했으며, 프로젝트별 설명과 기술 스택 정리를 통해 제 작업물을 한눈에 볼 수 있도록 구성했습니다.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!--프로젝트 3-->
-        <div class="content">
-          <div class="project">
-            <a href="https://github.com/introduce131/BitMiner" target="_blank">
-              <img src="./resource/project_img/project3.png" />
-            </a>
-            <div>
-              <!--프로젝트 명-->
-              <div class="project__name">
-                <p>PROJECT</p>
-                <p>Bit Miner</p>
-              </div>
-              <!--프로젝트 설명-->
-              <div class="project__contents">
-                <p>PARTS</p>
-                <p>Design, Back-end</p>
-              </div>
-            </div>
-          </div>
-
-          <!--프로젝트 4-->
-          <div class="project">
-            <a href="https://github.com/introduce131/web-portfolio" target="_blank">
-              <img src="./resource/project_img/project4.png" />
-            </a>
-            <div>
-              <!--프로젝트 명-->
-              <div class="project__name">
-                <p>PROJECT</p>
-                <p>Web Portfolio</p>
-              </div>
-              <!--프로젝트 설명-->
-              <div class="project__contents">
-                <p>PARTS</p>
-                <p>Design, Publish, F/B-end</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button class="slider__arrow slider__prev" aria-label="Previous">‹</button>
+        <button class="slider__arrow slider__next" aria-label="Next">›</button>
+        <div class="slider__dots" role="tablist" aria-label="Slider dots"></div>
       </div>
     </section>
 
